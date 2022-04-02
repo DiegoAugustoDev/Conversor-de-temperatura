@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: minhaFonte;
+    src: url(../fontes/Pangolin/Pangolin-Regular.ttf);
+}
+
+body{
+    background-color: #e6ebff;
+    font-family: minhaFonte;
+    padding: 10px;
+}
+
+#head{
+    padding-top: 12px;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.section{
+    width: 20rem;
+    height: 15rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+.temperatureTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.camp{
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 1.5rem;
+    outline: none;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: minhaFonte;
+}
+
+.camp:focus{
+    border-color: #b3b3ff;
+}
+
+.btn{
+    width: 4rem;
+    height: 2rem;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: minhaFonte;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.result{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+}
