@@ -52,3 +52,17 @@ kelvin2Btn.addEventListener("click", function(){
     let result6 = document.getElementById("result6")
     result6.innerHTML = (fahrenheit2 - 32) * 5/9 + 273.15 + " " + "graus Kelvin"
 })
+
+
+let btn = document.getElementById("btn")
+
+btn.addEventListener("click", function(){
+    document.body.classList.toggle("darkTheme")
+    if(document.body.classList.contains("darkTheme")){
+        btn.innerText = "Light Theme"
+    }
+
+    else{
+        btn.innerText = "Dark Theme"
+    }
+})
